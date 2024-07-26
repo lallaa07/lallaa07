@@ -1,0 +1,85 @@
+// @import './_var.scss';
+// main{
+//     @include wrap;
+//     a{
+//         &::before{
+//             content: "";
+//             display: inline-block;
+//             width: 8px - 1px;
+//             height: 8px;
+//             background-color: $mainColor;
+//             border-radius: 50%;
+//             margin-right: 10px;
+//         }
+//     }
+// }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+// #header .container{}
+// #header .container h1{}
+// #header .container h1 a{}
+// #header .container h1 nav{}
+// #header .container nav .deps-01{}
+// #header .container nav .deps-01 > a{}
+// #header .container.deps-02 > li{}
+// #header .container.deps-02 > li > a{}
+#header{
+    background-color: #333;
+    .container{
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        h1{
+            a{
+                color: #fff;
+                display: block;
+                line-height: 50pt;
+                text-align: center;
+            }
+        }
+        nav{
+            .depths-01{
+                display: flex;
+                li{
+                    position: relative;
+                    a{
+                        color: #fff;
+                        line-height: 50px;
+                        display: block;
+                        padding: 0 30px;
+                    }
+                    .depths-02{
+                        text-align: center;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                        background-color: #333;
+                        height: 0;
+                        overflow: hidden;
+                        transition: all 0.6s ease-in-out;
+                        z-index: 9;
+                        li{
+                            a{
+                                color: #fff;
+                                line-height: 50px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
