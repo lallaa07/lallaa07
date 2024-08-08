@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        #container{}
+        #wrap{
+            margin: 0 auto;
+            height: 300vh;
+            width: 1280px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        header{
+            position: sticky;
+            background-color: #ff00ff;
+            color: #fff;
+        }
+        header p{
+            display: inline-block;
+        }
+        .transform{
+            width: 20px;
+            height: 30px;
+            background-color: #ffff00;
+            transform: all 1s linear;
+            transform-origin: 0 0;
+            /* transform-origin:0 0; */
+            /* transform-origin: left top; */
+            /* transform-origin: 100% 100% */
+            /* transform-origin: right bottom; */
+        }
+        header p:hover + .transform{
+            /* transform: scale(2); */
+            /* transform: scalex(2); */
+            /* transform: scaley(2); */
+            /* transform: translate(30px, 50px); */
+            /* transform: translateX(50px); */
+            /* transform: translateY(10px); */
+            /* transform: rotate(72deg); */
+            /* transform: skew(10deg, 50deg); */
+            /* transform: skew */
+        }
+        #wrap > div{
+            margin: 40px;
+            width: 600px;
+            text-align: center;
+            height: 200px;
+            font-size: 1em;
+            font-weight: lighter;
+            color: #fff
+        }
+        #wrap .no-01{
+            background-color: #ff0000;
+            position: fixed;
+            top: 0;
+            z-index: 2;
+        }
+        #wrap .no-02{}
+        header p:hover + .transform{
+            transform: scale(2);
+            /* 2-두배 */
+            /* transform: scalex(2); x축으로만 */
+            /* transform: scalex(2); 은 y축*/        }
+        .topbt
+    </style>
+</head>
+<body>
+    <div id="container">
+        <section id="wrap">
+            <div class="no-01">나는 첫번째 섹션 태그이며 최상단 광고 팝업 입니다.</div>
+            <div class="no-02">나는 header안에 p태그 입니다.</div>
+        </section>
+        <header>
+            <p>
+                나는 header 안에 p태그 입니다.
+            </p>
+            <span class="transform"></span>
+        </header>
+    </div>
+    <a href="">class</a>
+</body>
+</html>
