@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #open-btn{
+            display: block;
+            font-size: 2em;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            line-height: 4;
+            width: 20%;
+            border: 0;
+            margin: 100px auto 0;
+            box-shadow: 15px 15px 20px;
+            cursor: pointer;
+        }
+        #popup-box{
+            position: fixed;
+            width: 600px;
+            height: 400px;
+            background-color: #333;
+            color: #fff;
+            top: calc(50% - 200px);
+            left: calc(50% - 300px);
+            text-align: right;
+            display: none;
+        }
+        #popup-box span{
+            display: inline-block;
+            font-size: 3em;
+            cursor: pointer;
+            padding: 20px;
+        }
+        #popup-box p{
+            margin-top: 100px;
+            text-align: center;
+            .show{
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button id="">나를 눌러보셈</button>
+    <div id="popup-btn">
+        <span>❤</span>
+         <p>팝업 내용임</p>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+        $('open-btn').on('click', function(){
+            //$('#popup-box').show(1000);
+            //$('#popup-box').fadeIn(1000); 
+            $('#popup-box').slideDown(1000);
+        });
+        $('#popup-box > span').on('click', function(){
+            // $('#popup-box').hide(1000);
+            // $('#popup-box').fadeOut(1000);
+            $('#popup-box').slideup(1000);
+        });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#open-btn{
+    display: block;
+    font-size: 2em;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 4;
+    width: 20%;
+    border: 0;
+    margin: 100px auto 0;
+    box-shadow: 15px 15px 20px;
+    cursor: pointer; 
+}
+#wrap{
+    margin: 0 auto;
+    width: 300px;
+    height: 1280px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+#wrap > div{
+    margin: 40px;
+    width: 600px;
+    text-align: center;
+    height: 200px;
+    font-size: 1em;
+    font-weight: lighter;
+    color: #fff;
+}
+#wrap .no-01{
+    background-color: #ff0000;
+    position: fixed;
+    top: 0%;
+    z-index: 2;
+}
+header{
+    position: sticky;
+    /* stickt속성은 static와 fixed 속성의 특징을 모두 갖고 있음 */
+    /* 도달 위치 반드시 설정(top, bottom, left, right 중 하나 반드시 필요 */
+    /* 조상태그에 overflow설정이 되어 있으면 말 안들음 */
+    /* 부모태그가 반드시 height값이 설정 되어 있어야 함 */
+    /* height값을 %로 지정하면 말 안들음 */
+    background-color: #d900ff;
+    text-align: center;
+    line-height: 10vh;
+    top: 0;
+}
+.transform{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #ffff00;
+    transition: all 1s linear;
+    transform-origin: center;
+}
+header p:hover + .transform{
+    transform: translateX(100px) rotate(1200deg);
+}
+section{
+    line-height: 15vh;
+    background-color: #ff0000;
+    color: #ffffff;
+}
+header p{}
+span{}
+span a{}
+#open-btn{}
