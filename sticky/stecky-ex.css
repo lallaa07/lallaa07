@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+#container{}
+#wrap{
+    margin: 0 auto;
+    height: 300vh;
+    width: 1280px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+header{
+    position: sticky;
+    background-color: #ff00ff;
+    color: #fff;
+    line-height: 10vh;
+    top: 0;
+}
+section{
+    line-height: 15vh;
+    background-color: #ff0000;
+    color: #fff;
+}
+header p{
+    display: inline-block;
+    /* line-height: 50px; */
+}
+.transform{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ffff00;
+    transition: all 1s linear;
+    /* transform-origin:0 0; */
+    /* transform-origin: left top; */
+    /* transform-origin: 100% 100% */
+    /* transform-origin: right bottom; */
+    transform-origin: center;
+}
+header p:hover + .transform{
+    /* transform: scale(2); */
+    /* transform: scalex(2); */
+    /* transform: scaley(2); */
+    /* transform: translate(30px, 50px); */
+    /* transform: translateX(50px); */
+    /* transform: translateY(10px); */
+    /* transform: rotate(72deg); */
+    /* transform: skew(10deg, 50deg); */
+    /* transform: skew */
+    transform: translateX(100px) rotate(1200deg);
+}
+#wrap > div{
+    margin: 40px;
+    width: 600px;
+    text-align: center;
+    height: 200px;
+    font-size: 1em;
+    font-weight: lighter;
+    color: #fff
+}
+#wrap .no-01{
+    background-color: #ff0000;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    /* 순서 위치 높을수록 위에진열됩니다 1이면 맨 아래 99맨 위에 */
+}
+#wrap .no-02{}
+    /* 2-두배 */
+    /* transform: scalex(2); x축으로만 */
+    /* transform: scalex(2); 은 y축*/        
